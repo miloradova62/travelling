@@ -1,0 +1,103 @@
+.mod-signin-wrapper {
+    position: fixed;
+    top: 100px;
+    left: 30vw;
+    width: 500px;
+    height: 550px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .5);
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    z-index: 999;
+}
+
+.mod-signin-wrapper .form-box {
+    width: 100%;
+    padding: 40px;
+
+}
+
+.form-box h2 {
+    font-size: 2em;
+    color: linear-gradient(90deg, rgb(28, 27, 27) 0%, rgb(26, 23, 23) 100%);
+    text-align: center;
+}
+
+.mod-signin-input {
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border-bottom: 2px solid rgb(28, 27, 27);
+    margin: 30px 0;
+    
+}
+
+.mod-signin-input label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 1em;
+    color: linear-gradient(90deg, rgb(28, 27, 27) 0%, rgb(26, 23, 23) 100%);
+    font-weight: 500;
+    pointer-events: none;
+}
+
+.mod-signin-input input:focus~label,
+.mod-signin-input input:valid~label {
+    top: -5px;
+    transition: .5s;
+}
+
+.mod-signin-input input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    color: rgb(28, 27, 27);
+    font-weight: 600;
+    padding: 0 35px 0 5px;
+
+}
+
+.mod-signin-button {
+    width: 100%;
+    height: 45px;
+    background-color: white;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.mod-signin-wrapper .mod-signin-icon {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 45px;
+    height: 45px;
+    background-color: rgb(28, 27, 27);
+    fill: white;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom-left-radius: 20px;
+    cursor: pointer;
+    z-index: 1;
+
+}
+
+.mod-signin-close-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
