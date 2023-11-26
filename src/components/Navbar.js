@@ -63,9 +63,9 @@ const closeMobileMenu = () => setClick(false);
                     </AnchorLink>
                 </li>
                 <li className='nav-item'>
-                    <Link to='/sign-up' className='nav-links-mobile' onClick={closeMobileMenu}>
+                    <button className='nav-links-mobile' onClick={()=> setSignFormIsOpen(true)}>
                       Войти
-                    </Link>
+                    </button>
                 </li>
               </ul>
               {button && 

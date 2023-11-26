@@ -1,7 +1,7 @@
 .mod-signin-wrapper {
     position: fixed;
     top: 100px;
-    left: 30vw;
+    left: 50vw;
     width: 600px;
     height: 550px;
     background: transparent;
@@ -119,4 +119,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+@media screen and (max-width: 960px) {
+    .mod-signin-wrapper {
+        width: 100px;
+        height: 200px;
+    }
+
 }
